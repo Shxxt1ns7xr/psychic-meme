@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <input type="text" class="display" id="display" disabled />
+        
+        <div class="keys">
+            <button onclick="clearDisplay()" class="operator-btn" style="background: #e74c3c;">AC</button>
+            <button onclick="deleteLast()" class="operator-btn" style="background: #e74c3c;">DEL</button>
+            <button onclick="appendCharacter('(')" class="sci-btn">(</button>
+            <button onclick="appendCharacter(')')" class="sci-btn">)</button>
+            <button onclick="appendCharacter('/')" class="operator-btn">/</button>
+
+            <button onclick="appendCharacter('sin(')" class="sci-btn">sin</button>
+            <button onclick="appendCharacter('7')">7</button>
+            <button onclick="appendCharacter('8')">8</button>
+            <button onclick="appendCharacter('9')">9</button>
+            <button onclick="appendCharacter('*')" class="operator-btn">*</button>
+
+            <button onclick="appendCharacter('cos(')" class="sci-btn">cos</button>
+            <button onclick="appendCharacter('4')">4</button>
+            <button onclick="appendCharacter('5')">5</button>
+            <button onclick="appendCharacter('6')">6</button>
+            <button onclick="appendCharacter('-')" class="operator-btn">-</button>
+
+            <button onclick="appendCharacter('tan(')" class="sci-btn">tan</button>
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+            <button onclick="appendCharacter('+')" class="operator-btn">+</button>
+
+            <button onclick="appendCharacter('sqrt(')" class="sci-btn">√</button>
+            <button onclick="appendCharacter('pi')" class="sci-btn">π</button>
+            <button onclick="appendCharacter('0')">0</button>
+            <button onclick="appendCharacter('.')">.</button>
+            <button onclick="appendCharacter('^')" class="sci-btn">^</button>
+
+            <button onclick="calculateResult()" class="equal-btn" >=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
